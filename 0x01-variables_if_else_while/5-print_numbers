@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+/**
+ * main - the main code
+ * Return: it returns 0
+ */
+int main(void)
+{
+	int base = 0123456789;
+
+	printf("%i", base);
+	return (0);
+}
