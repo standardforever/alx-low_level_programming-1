@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char x = "0123456789abcdef";
+	char y = "0123456789abcdef";
 
-	putchar(x);
+	putchar(y);
 	putchar("\n");
 	return (0);
 }
