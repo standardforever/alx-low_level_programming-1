@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char alpb = "abcdefghijklmnopqrstuvwxyz";
+	char a = "abcdefghijklmnopqrstuvwxyz";
 
-	putchar(alpb);
+	putchar(a);
 	putchar("\n");
 	return (0);
 }
