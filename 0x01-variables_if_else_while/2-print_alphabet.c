@@ -1,14 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Short description, single line
- * Return: Description of the returned value
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char apb = "abcdefghijklmnopqrstuvwxyz";
+	char ch;
 
-	putchar(apb);
-	putchar("\n");
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
 	return (0);
 }
