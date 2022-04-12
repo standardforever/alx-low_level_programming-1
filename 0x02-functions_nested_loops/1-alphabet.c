@@ -14,13 +14,3 @@ char print_alphabet(void)
 	}
 	_putchar('\n');
 }
-
-/**
- * main - where the function print_alphabet is call
- * Return: 0
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
