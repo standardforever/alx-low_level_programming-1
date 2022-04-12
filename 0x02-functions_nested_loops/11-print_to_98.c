@@ -1,37 +1,25 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_to_98 - void function
- * @n: argument
- * Return: No return type
+ * print_to_98 - print to 98
+ * @n : number to start from
+ * Return:0 or 1
  */
+
 void print_to_98(int n)
 {
-	for (n; n < 99; n++)
-	{
-		pri(n);
-		_putchar(',');
-		_putchar(' ');
-	}
-	for (n; n > 99; n--)
-	{
-		pri(n);
-		_putchar(',');
-		_putchar(' ');
-	}
-	putchar('\n');
-}
 
-/**
- * main - check code
- * Return: Always 0
- */
-int main(void)
-{
-	print_to_98(0);
-//	print_to_98(98);
-//	print_to_98(111);
-//	print_to_98(81);
-//	print_to_98(-10);
-	return (0);
+	while (n < 98)
+	{
+		printf("%i, ", n);
+		n++;
+	}
+	while (n > 98)
+	{
+		printf("%i, ", n);
+		n--;
+	}
+
+	printf("98");
+	putchar('\n');
 }

@@ -1,7 +1,3 @@
-100-times_table.c
-
-Ans:
-
 #include "main.h"
 
 /**
