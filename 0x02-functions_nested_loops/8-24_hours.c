@@ -1,36 +1,50 @@
+
 #include "main.h"
 
 /**
- *jack_bauer - of type void
- * Return: don't have a return type
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * Return:void
  */
+
 void jack_bauer(void)
 {
-	int a,b,c,d;
 
-	for (a = 48; a <= 50; a++)
-		for (b = 48; b <=57; b++)
-			for (c = 48; c <= 53; c++)
-				for (d = 48; d <= 57; d++)
+	int h1;
+	int h2;
+	int m1;
+	int m2;
+	int a = 9;
+
+	h2 = 0;
+	while (h2 <= 2)
+	{
+		if (h2 == 2)
+		{
+			/*Restrain to 23h, not 29*/
+			a = 3;
+		}
+		h1 = 0;
+		while (h1 <= a)
+		{
+			m2 = 0;
+			while (m2 <= 5)
+			{
+				m1 = 0;
+				while (m1 <= 9)
 				{
-					if (a != 48 && b != 51)
-						break;
-				       	_putchar(a);
-			       		_putchar(b);
-		       			_putchar(':');
-	       				_putchar(c);
-       					_putchar(d);
-	       				_putchar('\n');
+					_putchar('0' + h2);
+					_putchar('0' + h1);
+					_putchar(':');
+					_putchar('0' + m2);
+					_putchar('0' + m1);
+					_putchar('\n');
+					m1++;
 				}
-}
+				m2++;
+			}
+			h1++;
+		}
+		h2++;
+	}
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	jack_bauer();
-	return (0);
 }
