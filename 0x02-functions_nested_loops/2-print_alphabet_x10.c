@@ -18,13 +18,3 @@ char print_alphabet_x10(void)
 		_putchar('\n');
 	}
 }
-
-/**
- * main - call the function print_alphabet_x10
- * Return: return 0
- */
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
