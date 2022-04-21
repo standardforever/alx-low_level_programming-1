@@ -17,11 +17,4 @@ int _strlen(char *s)
 		}
 	}
 	return (i);
-/**
-*	int count = 0;
-*
-*	while (s[count] != '\o')
-*		count++;
-*	return (count);
-*/
 }

@@ -9,7 +9,7 @@ void _puts(char *str)
 {
 	int count = 0;
 
-	while (str[count] != '\o')
+	while (str[count] != str[-1])
 	{
 		_putchar(str[count]);
 		count++;
