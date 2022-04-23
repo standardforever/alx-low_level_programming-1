@@ -8,11 +8,11 @@
  */
 void reverse_array(int *a, int n)
 {
-	n = n - 1;
 	int i;
 	int temp;
 
 	i = 0;
+	n = n - 1;
 
 	while (i < n)
 	{
