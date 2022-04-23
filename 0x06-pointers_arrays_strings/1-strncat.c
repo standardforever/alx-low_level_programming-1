@@ -1,9 +1,10 @@
 #include "main.h"
 
-/** _strncat - function that concatenate two strings
+/**
+ *_strncat - function that concatenate two strings
  * @dest: concatenate src to dest
  * @src: concatenate to dest
- * n: the number of string in src to be concatenate to dest
+ * @n: the number of string in src to be concatenate to dest
  * Return: Return a pointer to the resulting dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -19,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (src[length2] != '\0')
 		length2++;
 	/* concatenate the two strings */
-	for (i = 0; i <= (n-1); i++, length++)
+	for (i = 0; i <= (n - 1); i++, length++)
 	{
 		if (i == length2)
 			break;
