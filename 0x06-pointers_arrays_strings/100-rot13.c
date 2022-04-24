@@ -14,6 +14,7 @@ char *rot13(char *c)
 	i = 0;
 	while (c[i] != '\0')
 	{
+		j = 0;
 		while (a[j] != '\0')
 		{
 			if (c[i] == a[j])
