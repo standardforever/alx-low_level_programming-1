@@ -8,9 +8,6 @@
  */
 int main(void)
 {
-	int n;
-
-	n = _strlen_recursion("Corbin Coleman");
-	printf("%d\n", n);
+	_print_rev_recursion("\nColton Walker");
 	return (0);
 }
